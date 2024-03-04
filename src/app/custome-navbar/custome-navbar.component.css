@@ -1,0 +1,39 @@
+.custome-navbar{
+    height: 72px;
+    box-shadow: 0px 3px 16px var(--shadow-navbar-color);
+}
+
+.container-logo{
+    height: 48px;
+    width: 128px;
+    padding: 12px 22.89px 12px 22px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-logOut{
+    width: 156px;
+    height: 48px;
+    background-color: var(--white-color);
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--text-color-btn);
+    padding: 12px 14px;
+    top:50%;
+    left: 100%;
+    right: 12px;
+    transform: translate(-100%, -50%);
+    transition:width .3s ease-in-out;
+}
+
+.text-logOut{
+    margin: 14px 12px;
+}
+
+@media screen and (width < 460px ) {
+    .button-logOut{
+        width: 72px;
+    }
+}

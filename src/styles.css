@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Paleta de colores de la aplicación */
+:root{
+    --white-color:#ffffff;
+    --text-color:#413E4D;
+    --action-button-color:#DD3542;
+    --shadow-color: #00000029;
+    --border-input-50:#ABB9C780;
+    --label-input-color:#ABB9C7;
+    --shadow-input-color: #00000029;
+    --button-color: #DD3542;
+    --shadow-navbar-color: #D1E8FF74;
+    --text-color-btn: #31323F;
+    --text-table-color:#8E8E8E;
+    --row-color: #F7F7F7;
+    --th-color:#F1F6FB;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

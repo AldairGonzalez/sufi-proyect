@@ -1,0 +1,46 @@
+<app-custome-navbar />
+<div class="d-flex justify-content-between align-items-center pageContainer">
+    <div class="title">
+        <span>Mis desembolsos</span>
+    </div>
+    <div class="btn-download">
+        <app-custome-button [buttonText]="'Descargar'" [isDownload]="true" [showText]="showText" />
+    </div>
+</div>
+
+<!-- Po motivos de tiempo no pude trabajar en los filtros y de terminar la paginación -->
+
+<div class="table-container">
+    <table class="custome-table" mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="fecha">
+          <th mat-header-cell *matHeaderCellDef> Fecha y hora </th>
+          <td mat-cell *matCellDef="let desembolso"> {{ desembolso.fecha | date:'dd/MM/yyyy' }} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="numeroDesembolso">
+          <th mat-header-cell *matHeaderCellDef> Número de desembolso </th>
+          <td mat-cell *matCellDef="let desembolso"> {{ desembolso.numeroDesembolso }} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="tipoDocumento">
+          <th mat-header-cell *matHeaderCellDef> Tipo de documento </th>
+          <td mat-cell *matCellDef="let desembolso"> {{ desembolso.tipoDocumento }} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="numeroDocumento">
+          <th mat-header-cell *matHeaderCellDef> Número de documento </th>
+          <td mat-cell *matCellDef="let desembolso"> {{ desembolso.numeroDocumento }} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="monto">
+          <th mat-header-cell *matHeaderCellDef> Monto </th>
+          <td mat-cell *matCellDef="let desembolso"> {{ desembolso.monto | currency:'USD':'symbol':'1.2-2' }} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator>
+</div>
+

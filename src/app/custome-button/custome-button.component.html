@@ -1,0 +1,8 @@
+<button class="d-flex justify-content-center align-items-center h-100" [class]="showText ? 'custome-button' : 'custome-button-small'" [type]="typeButton" (click)="onClick()">
+    @if(isDownload){
+       <span [class]="showText ? 'icon' : 'm-0'"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlklEQVR4nO3SQQrCMBRF0QwFpYtyDyIF9+Eauqo60dW4A4UjgRRKqZS0wYm58Eb5vMtPEkKlJOhjipaOqYJF1Df46RVhh+OSIM7E2TWCDi+cvwniWZrp1gj2uOGNy1SAUyp/oMkWzEkkQZHykaRJRbHwmVKmfGaTgXLlk03uKWXLB3CICVtBi2tm2hxB/Cm59Js3C3/JB3GJYjOLq340AAAAAElFTkSuQmCC"></span> 
+    }
+    @if(showText){
+        <span [class]="isDownload ? 'text-btn fs-custome' : 'text-btn'">{{buttonText}}</span>
+    }
+</button>

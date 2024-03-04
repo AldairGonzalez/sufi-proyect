@@ -1,0 +1,61 @@
+<div class="position-relative vw-100 vh-100 overflow-hidden">
+    <section class="position-absolute section-login w-100">
+        <div class="d-flex justify-content-center align-items-center ">
+            <div class="container-login w-100">
+                <div class="header-login w-100">
+                    <div class="d-flex justify-content-center">
+                        <div class="container-logo">
+                            <img src="../../assets/Logo.svg" class="img-fluid" alt="Logo Sufi">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center container-name">
+                        <span class="d-block text-center fw-bold">Sufipay</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center container-rol">
+                        <span class="d-block text-center">Administrador Comercial</span>
+                    </div>
+                </div>
+                <div class="body-login w-100">
+                    <form action="" method="post">
+                        <div class="container-inputs">
+                            <app-campo-text [labelText]="'Usuario'" [idInput]="'txt_user'" [nameInput]="'user'" [typeInput]="'text'" />
+                            <app-campo-text [labelText]="'Contraseña'" [idInput]="'txt_pass'" [nameInput]="'pass'" [typeInput]="'password'" />
+                        </div>
+                        <div class="buttonContainer">
+                            <section class="section-button w-100">
+                                <div class="d-flex justify-content-center h-100">
+                                    <app-custome-button [buttonText]="'INGRESAR'" [isDownload]="false" [showText]="true" [typeButton]="'submit'" (btnClick)="login()"/>
+                                </div>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-login w-100">
+                    <div class="d-flex justify-content-center align-items-center forget-container">
+                        <a href="#">No recuerdo mi contraseña</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-background w-100 vh-100">
+        <div class="img1-container position-absolute">
+            <img class="position-sticky img" src="../../assets/BackgroundObject.svg" alt="Objecto">
+        </div>
+        <div class="img2-container position-absolute">
+            <img class="position-sticky img" src="../../assets/BackgroundObject.svg" alt="Objecto">
+        </div>
+        <div class="img3-container position-absolute">
+            <img src="../../assets/PointsGroup.svg" alt="Grupo de Puntos">
+        </div>
+        <div class="img4-container position-absolute">
+            <img src="../../assets/PointsGroup.svg" alt="Grupo de Puntos">
+        </div>
+        <div class="img5-container position-absolute">
+            <img src="../../assets/RedCircle.svg" alt="Grupo de Puntos">
+        </div>
+        <div class="img6-container position-absolute">
+            <img src="../../assets/RedCircle.svg" alt="Grupo de Puntos">
+        </div>
+    </section>
+</div>

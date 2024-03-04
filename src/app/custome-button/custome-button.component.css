@@ -1,0 +1,33 @@
+.text-btn{
+    display: block;
+    height: 20px;
+    width: 126px;
+    letter-spacing: 0px;
+}
+
+.fs-custome{
+    font-size: 14px;
+}
+
+.custome-button{
+    min-width: 174px;
+    border-radius: 24px;
+    background-color: var(--button-color);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.custome-button, .custome-button-small{
+    min-height: 48px;
+}
+
+.icon{
+    margin: 12px 0px 12px 12px;
+    transition: margin 1s ease-in-out;
+}
+
+.custome-button-small{
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: var(--button-color);
+}

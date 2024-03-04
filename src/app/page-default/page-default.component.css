@@ -1,0 +1,65 @@
+.pageContainer{
+    height: 88px;
+}
+
+.table-container{
+    height: 100vh;
+    overflow-y: auto;
+    width: 100vw;
+    overflow-x: auto;
+}
+
+.custome-table th{
+    font-size: 14px;
+    font-weight: bold;
+    color:var(--text-color);
+    padding-left: 72px;
+    padding-right: 72px;
+    background-color: var(--th-color);
+}
+
+.custome-table td{
+    font-size: 14px;
+    color: var(--text-table-color);
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.custome-table tr:nth-child(odd) {
+    background-color: var(--white-color);
+}
+
+.custome-table tr:nth-child(even) {
+    background-color: var(--row-color);
+}
+
+.filtros{
+    padding: 16px 72px;
+}
+
+.title{
+    width: 184px;
+    height: 24px;
+    margin: 32px 0px 32px 72px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.btn-download{
+    margin: 20px 72px 20px 0px;
+}
+
+.title, .btn-download{
+    transition: margin 1s ease-in-out;
+}
+
+@media screen and (width < 560px) {
+    .title{
+        margin: 32px 0px 32px 20px;
+    }
+    
+    .btn-download{
+        margin: 20px 20px 20px 0px;
+    }
+}

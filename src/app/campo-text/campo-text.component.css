@@ -1,0 +1,26 @@
+.input-container input{
+    max-width: 368px;
+    max-height: 56px;
+    border: 1px solid var(--border-input-50);
+    border-radius: 6px; 
+    margin-bottom: 12px;
+    color:var(--text-color);
+    outline: none;
+    padding: 28px 16px 8px;
+}
+
+.input-container label{
+    pointer-events: none;
+    max-height: 20px;
+    max-width: 336px;
+    top:18px;
+    left: 16px;
+    transition: .5s;
+    color:var( --label-input-color);
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top:8px;
+    font-size: 12px;
+}
